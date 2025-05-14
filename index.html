@@ -2,11 +2,11 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Accès sécurisé au rapport</title>
+    <title>Portail Rapports Power BI</title>
     <script>
         function checkPassword() {
             const password = prompt("Veuillez entrer le mot de passe :");
-            if (password === "NECC2024-ROYALDISTRIB") {
+            if (password === "NECC2024-ROYAL") {
                 document.getElementById("content").style.display = "block";
             } else {
                 alert("Mot de passe incorrect !");
@@ -16,11 +16,17 @@
 </head>
 <body onload="checkPassword()">
     <div id="content" style="display:none; text-align: center;">
-        <h2>Rapport Power BI - Royal Distribution</h2>
-        <iframe width="1140" height="541.25" 
+        <h2>Rapport 1 - Royal Distribution</h2>
+        <iframe style="width: 100%; height: 90vh;" 
                 src="https://app.powerbi.com/reportEmbed?reportId=b3d35a45-3ae5-41b4-ab4d-be6c85f1476d&autoAuth=true&ctid=296fa80e-7707-4c5d-97c2-60d76a1081c5" 
+                frameborder="0" allowfullscreen></iframe>
+
+        <h2>Rapport 2 - Analyse Ventes</h2>
+        <iframe style="width: 100%; height: 90vh;" 
+                src="https://app.powerbi.com/reportEmbed?reportId=0ea0e042-ef3b-4bb1-bb82-126123eb3999&autoAuth=true&ctid=296fa80e-7707-4c5d-97c2-60d76a1081c5" 
                 frameborder="0" allowfullscreen></iframe>
     </div>
 </body>
 </html>
+
 
